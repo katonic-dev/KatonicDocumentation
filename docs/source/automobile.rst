@@ -110,7 +110,7 @@ Explore the ML code of the Automobile usecase
 
 Run the notebook step-by-step. Note that the code fails because a library is missing.
 
-.. figure:: /images/missing_lib.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/missing_lib.png
    :scale: 40%
    :align: center
 
@@ -118,13 +118,13 @@ You can install the required libraries either by go to the Terminal and install 
 
 Run the cell right above to install the missing libraries:
 
-.. figure:: /images/pip_install.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/pip_install.png
    :scale: 40%
    :align: center
 
 Restart the notebook kernel by clicking on the Refresh icon.
 
-.. figure:: /images/restart.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/restart.png
    :scale: 40%
    :align: center
 
@@ -143,19 +143,19 @@ Enable Kale by clicking on the Kale slider in the Kale Deployment Panel (left pa
 
 * Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.
 
-.. figure:: /images/kale.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/kale.png
    :scale: 40%
    :align: center
 
 Explore per-cell dependencies. 
 
-.. figure:: /images/kale_deploy.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/kale_deploy.png
    :scale: 40%
    :align: center
 
 See how multiple notebook cells can be part of a single pipeline step, as indicated by color bars on the left of the cells, and how a pipeline step may depend on previous ones, as indicated by depends on labels above the cells. For example, the image below shows multiple cells that are part of the same pipeline step. They have the same brown color and they depend on a previous pipeline step named "load_data".
 
-.. figure:: /images/tag.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/tag.png
    :scale: 40%
    :align: center
 
@@ -173,7 +173,7 @@ Click **Advanced Settings** and add Docker image
 
 * Images are defined using a docker file, a docker file is just a text file with a list of steps to perform to create that image. So, you write a docker file then you build that and you get an image which you can run to get containers.
 
-.. figure:: /images/adv_set.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/adv_set.png
    :scale: 50%
    :align: center
 
@@ -185,31 +185,31 @@ Click the **Volume access mode** and select the mode.
 
 * ReadWriteMany - Read write by many node
 
-.. figure:: /images/mode.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/mode.png
    :scale: 50%
    :align: center
 
 Click the **Compile and Run** button.
 
-.. figure:: /images/comp_run.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/comp_run.png
    :scale: 50%
    :align: center
 
 Watch the progress of Compiling Notebook.
 
-.. figure:: /images/comp.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/comp.png
    :scale: 50%
    :align: center
 
 Watch the progress of Running pipeline
 
-.. figure:: /images/run.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/run.png
    :scale: 50%
    :align: center
 
 Click the link to go to the Katonic Pipelines UI and view the run.
 
-.. figure:: /images/view.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/view.png
    :scale: 50%
    :align: center
 
@@ -218,23 +218,23 @@ Katonic Pipeline Dashboard
 
 After clicking view, select the automobile experiment
 
-.. figure:: /images/act_exp.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/act_exp.png
    :scale: 40%
    :align: center
 
 Dropdown the experiment and select the latest pipeline which is created
 
-.. figure:: /images/rec_pipe.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/rec_pipe.png
    :scale: 40%
    :align: center
 
 Wait for it to complete.
 
-.. figure:: /images/pipe_start.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/pipe_start.png
    :scale: 40%
    :align: center
 
-.. figure:: /images/pipe_comp.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/pipe_comp.png
    :scale: 40%
    :align: center
 
@@ -244,19 +244,19 @@ Pipeline components execution
 
 Visualization of Automobile Load data Components
 
-.. figure:: /images/load_vis.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/load_vis.png
    :scale: 40%
    :align: center
 
 Visualization of Automobile Data preprocessing Components
 
-.. figure:: /images/prepro_vis.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/prepro_vis.png
    :scale: 40%
    :align: center
 
 Visualization of Automobile Feature engineering Components
 
-.. figure:: /images/feat_vis.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/feat_vis.png
    :scale: 40%
    :align: center
 
