@@ -38,43 +38,43 @@ Create a Notebook
 
 Navigate to the **Notebook** link on the Katonic central dashboard.
 
-.. figure:: /images/notebook.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/notebook.png
    :scale: 40%
    :align: center
 
 Click on **Create Notebook**
 
-.. figure:: /images/create.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/create.png
    :scale: 40%
    :align: center
 
 Specify a name for your Notebook
 
-.. figure:: /images/notebook_name.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/notebook_name.png
    :scale: 40%
    :align: center
 
 Make sure you have selected one of the image:
 
-.. figure:: /images/choose_image.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/choose_image.png
    :scale: 80%
    :align: center
 
 Select the **CPU** and **Memory** require:
 
-.. figure:: /images/cpu_mo.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/cpu_mo.png
    :scale: 80%
    :align: center
 
 Click Create to create the notebook.
 
-.. figure:: /images/create2.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/create2.png
    :scale: 80%
    :align: center
 
 When the notebook server is available, click Connect to connect to it.
 
-.. figure:: /images/connect.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/connect.png
    :scale: 70%
    :align: center
 
@@ -83,7 +83,7 @@ Download the data and notebook
 
 A new tab will open up with the JupyterLab landing page. Create a new Terminal in JupyterLab.
 
-.. figure:: /images/terminal.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/terminal.png
    :scale: 40%
    :align: center
 
