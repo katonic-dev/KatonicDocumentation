@@ -66,7 +66,7 @@ Select the **CPU** and **Memory** require:
    :scale: 80%
    :align: center
 
-Click Create to create the notebook.
+Click **Create** to create the notebook.
 
 .. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/create2.png
    :scale: 80%
