@@ -240,7 +240,6 @@ Wait for it to complete.
 
 Pipeline components execution
 -------------------------------
-<<<<<<< HEAD
 
 Visualization of Automobile Load data Components
 
@@ -261,5 +260,3 @@ Visualization of Automobile Feature engineering Components
    :align: center
 
 Congratulations! You just ran an end-to-end Katonic Pipeline starting from your notebook!
-=======
->>>>>>> ff068d98e1c870abdecd3ec9011cf41b9809d68b
