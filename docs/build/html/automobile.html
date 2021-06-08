@@ -253,19 +253,122 @@
 <p>git clone <a class="reference external" href="https://github.com/katonic-dev/Examples.git">https://github.com/katonic-dev/Examples.git</a></p>
 </div>
 <p>This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb">automobile-preprocessing.ipynb</a> inside <strong>Examples/automobile/</strong>.</p>
+<p>Here we divide the notebook into three steps:</p>
+<ul class="simple">
+<li><p>First step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-preprocessing.ipynb">automobile-preprocessing.ipynb</a></p></li>
+<li><p>Second step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-model-building.ipynb">automobile-model-building.ipynb</a></p></li>
+<li><p>Third step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb">automobile-Deploy.ipynb</a></p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="explore-the-ml-code-of-the-automobile-usecase">
 <h2>Explore the ML code of the Automobile usecase<a class="headerlink" href="#explore-the-ml-code-of-the-automobile-usecase" title="Permalink to this headline">¶</a></h2>
+<p>Run the notebook step-by-step. Note that the code fails because a library is missing.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/missing_lib.png"><img alt="_images/missing_lib.png" src="_images/missing_lib.png" style="width: 768.0px; height: 376.40000000000003px;" /></a>
+</div>
+<p>You can install the required libraries either by go to the Terminal and install the missing library or directly in the cell in the notebook.</p>
+<p>Run the cell right above to install the missing libraries:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/pip_install.png"><img alt="_images/pip_install.png" src="_images/pip_install.png" style="width: 765.6px; height: 376.0px;" /></a>
+</div>
+<p>Restart the notebook kernel by clicking on the Refresh icon.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/restart.png"><img alt="_images/restart.png" src="_images/restart.png" style="width: 765.6px; height: 378.0px;" /></a>
+</div>
 </div>
 <div class="section" id="convert-your-notebook-to-a-katonic-pipeline">
 <h2>Convert your notebook to a Katonic Pipeline<a class="headerlink" href="#convert-your-notebook-to-a-katonic-pipeline" title="Permalink to this headline">¶</a></h2>
+<p>Enable Kale by clicking on the Kale slider in the Kale Deployment Panel (left pane of the notebook).</p>
+<p><strong>Kale:</strong></p>
+<ul class="simple">
+<li><p>Kale is a project that aims at simplifying the Data Science experience of deploying Pipelines workflows.</p></li>
+<li><p>Kale bridges this gap by providing a simple UI to define Kubeflow Pipelines workflows directly from you JupyterLab interface, without the need to change a single line of code.</p></li>
+<li><p>Kale was designed to address difficulties by providing a tool to simplify the deployment process of a Jupyter Notebook into Katonic Pipelines workflows. Translating Jupyter Notebook directly into a Katonic pipeline ensures that all the processing building blocks are well organized and independent from each other, while also leveraging on the experiment tracking and workflows organization.</p></li>
+<li><p>Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/kale.png"><img alt="_images/kale.png" src="_images/kale.png" style="width: 768.0px; height: 324.40000000000003px;" /></a>
+</div>
+<p>Explore per-cell dependencies.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/kale_deploy.png"><img alt="_images/kale_deploy.png" src="_images/kale_deploy.png" style="width: 765.6px; height: 373.6px;" /></a>
+</div>
+<p>See how multiple notebook cells can be part of a single pipeline step, as indicated by color bars on the left of the cells, and how a pipeline step may depend on previous ones, as indicated by depends on labels above the cells. For example, the image below shows multiple cells that are part of the same pipeline step. They have the same brown color and they depend on a previous pipeline step named “load_data”.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/tag.png"><img alt="_images/tag.png" src="_images/tag.png" style="width: 768.0px; height: 290.40000000000003px;" /></a>
+</div>
+<p>Normally, you should create a new Docker image to be able run this notebook as a Katonic pipeline, to include the newly installed libraries.</p>
+<p>Click <strong>Advanced Settings</strong> and add Docker image</p>
+<p><strong>Docker image:</strong></p>
+<ul class="simple">
+<li><p>Docker is a tool for running applications in an isolated environment. It gives you advantages similar to running your applications inside a virtual machine.</p></li>
+<li><p>Docker gives you these advantages but without the overhead and hassle of running and managing a virtual machine instead we have containers, the code and the environment are all wrapped up inside a container but a container is not a full virtual machine.</p></li>
+<li><p>Docker uses special features of the UNIX file system to create these isolated environments.</p></li>
+<li><p>Images are defined using a docker file, a docker file is just a text file with a list of steps to perform to create that image. So, you write a docker file then you build that and you get an image which you can run to get containers.</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/adv_set.png"><img alt="_images/adv_set.png" src="_images/adv_set.png" style="width: 211.0px; height: 470.5px;" /></a>
+</div>
+<p>Click the <strong>Volume access mode</strong> and select the mode.</p>
+<ul class="simple">
+<li><p>ReadOnlyMany - Read only by many node</p></li>
+<li><p>ReadWriteOnce - Read write by single node</p></li>
+<li><p>ReadWriteMany - Read write by many node</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/mode.png"><img alt="_images/mode.png" src="_images/mode.png" style="width: 209.5px; height: 306.5px;" /></a>
+</div>
+<p>Click the <strong>Compile and Run</strong> button.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/comp_run.png"><img alt="_images/comp_run.png" src="_images/comp_run.png" style="width: 228.0px; height: 466.5px;" /></a>
+</div>
+<p>Watch the progress of Compiling Notebook.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/comp.png"><img alt="_images/comp.png" src="_images/comp.png" style="width: 231.5px; height: 122.5px;" /></a>
+</div>
+<p>Watch the progress of Running pipeline</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/run.png"><img alt="_images/run.png" src="_images/run.png" style="width: 229.0px; height: 161.0px;" /></a>
+</div>
+<p>Click the link to go to the Katonic Pipelines UI and view the run.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/view.png"><img alt="_images/view.png" src="_images/view.png" style="width: 228.5px; height: 163.0px;" /></a>
+</div>
 </div>
 <div class="section" id="katonic-pipeline-dashboard">
 <h2>Katonic Pipeline Dashboard<a class="headerlink" href="#katonic-pipeline-dashboard" title="Permalink to this headline">¶</a></h2>
+<p>After clicking view, select the automobile experiment</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/act_exp.png"><img alt="_images/act_exp.png" src="_images/act_exp.png" style="width: 768.0px; height: 352.40000000000003px;" /></a>
+</div>
+<p>Dropdown the experiment and select the latest pipeline which is created</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/rec_pipe.png"><img alt="_images/rec_pipe.png" src="_images/rec_pipe.png" style="width: 768.0px; height: 369.20000000000005px;" /></a>
+</div>
+<p>Wait for it to complete.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/pipe_start.png"><img alt="_images/pipe_start.png" src="_images/pipe_start.png" style="width: 763.6px; height: 374.40000000000003px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/pipe_comp.png"><img alt="_images/pipe_comp.png" src="_images/pipe_comp.png" style="width: 768.0px; height: 375.20000000000005px;" /></a>
+</div>
 </div>
 <div class="section" id="pipeline-components-execution">
 <h2>Pipeline components execution<a class="headerlink" href="#pipeline-components-execution" title="Permalink to this headline">¶</a></h2>
+<p>Visualization of Automobile Load data Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/load_vis.png"><img alt="_images/load_vis.png" src="_images/load_vis.png" style="width: 765.6px; height: 334.0px;" /></a>
+</div>
+<p>Visualization of Automobile Data preprocessing Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/prepro_vis.png"><img alt="_images/prepro_vis.png" src="_images/prepro_vis.png" style="width: 764.8000000000001px; height: 332.8px;" /></a>
+</div>
+<p>Visualization of Automobile Feature engineering Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/feat_vis.png"><img alt="_images/feat_vis.png" src="_images/feat_vis.png" style="width: 768.0px; height: 347.6px;" /></a>
+</div>
+<p>Congratulations! You just ran an end-to-end Katonic Pipeline starting from your notebook!</p>
 </div>
 </div>
 
