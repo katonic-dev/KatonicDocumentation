@@ -94,6 +94,15 @@
 <li class="toctree-l3"><a class="reference internal" href="#dataset">Dataset</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-notebook">Create a Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-the-data-and-notebook">Download the data and notebook</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#upload-automobile-pipeline-notebook-file">Upload Automobile pipeline notebook file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#explore-the-ml-code-of-the-automobile-usecase">Explore the ML code of the Automobile usecase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#convert-your-notebook-to-a-katonic-pipeline">Convert your notebook to a Katonic Pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#katonic-pipeline-dashboard">Katonic Pipeline Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pipeline-components-execution">Pipeline components execution</a></li>
 </ul>
 </li>
 </ul>
@@ -166,23 +175,17 @@
   <div class="section" id="automobile">
 <span id="id1"></span><h1>Automobile<a class="headerlink" href="#automobile" title="Permalink to this headline">¶</a></h1>
 <ol class="arabic simple">
-<li><p>Automobile workflow</p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+<li><p>Automobile workflow</p>
+<ul class="simple">
 <li><p>Dataset</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="2">
+</li>
 <li><p>Create a Notebook</p></li>
-<li><p>Download the data and notebook</p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
+<li><p>Download the data and notebook</p>
+<ul class="simple">
 <li><p>Upload Automobile pipeline notebook file</p></li>
 </ul>
-</div></blockquote>
-<ol class="arabic simple" start="4">
+</li>
 <li><p>Explore the ML code of the Automobile usecase</p></li>
 <li><p>Convert your notebook to a Katonic Pipeline</p></li>
 <li><p>Katonic Pipeline Dashboard</p></li>
@@ -196,10 +199,73 @@
 <li><p>Perform feature engineering to create features.</p></li>
 <li><p>Storing created features in the feature store.</p></li>
 </ul>
+<p><strong>What we’re going to build</strong></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/overview_graph.png"><img alt="_images/overview_graph.png" src="_images/overview_graph.png" style="width: 361.6px; height: 474.40000000000003px;" /></a>
+</div>
 <div class="section" id="dataset">
 <h3>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h3>
-<p>The dataset involved here is publicly available at Automobile Dataset that predict the price of the automobiles given all the information in the dataset.</p>
+<p>The dataset involved here is publicly available at <a class="reference external" href="https://www.kaggle.com/toramky/automobile-dataset">Automobile Dataset</a> that predict the price of the automobiles given all the information in the dataset.</p>
 </div>
+</div>
+<div class="section" id="create-a-notebook">
+<h2>Create a Notebook<a class="headerlink" href="#create-a-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Navigate to the <strong>Notebook</strong> link on the Katonic central dashboard.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/notebook.png"><img alt="_images/notebook.png" src="_images/notebook.png" style="width: 765.6px; height: 368.40000000000003px;" /></a>
+</div>
+<p>Click on <strong>Create Notebook</strong></p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/create.png"><img alt="_images/create.png" src="_images/create.png" style="width: 764.8000000000001px; height: 132.4px;" /></a>
+</div>
+<p>Specify a name for your Notebook</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/notebook_name.png"><img alt="_images/notebook_name.png" src="_images/notebook_name.png" style="width: 768.0px; height: 135.6px;" /></a>
+</div>
+<p>Make sure you have selected one of the image:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/choose_image.png"><img alt="_images/choose_image.png" src="_images/choose_image.png" style="width: 767.2px; height: 442.40000000000003px;" /></a>
+</div>
+<p>Select the <strong>CPU</strong> and <strong>Memory</strong> require:</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/cpu_mo.png"><img alt="_images/cpu_mo.png" src="_images/cpu_mo.png" style="width: 757.6px; height: 429.6px;" /></a>
+</div>
+<p>Click Create to create the notebook.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/create2.png"><img alt="_images/create2.png" src="_images/create2.png" style="width: 752.8000000000001px; height: 326.40000000000003px;" /></a>
+</div>
+<p>When the notebook server is available, click Connect to connect to it.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/connect.png"><img alt="_images/connect.png" src="_images/connect.png" style="width: 961.8px; height: 85.39999999999999px;" /></a>
+</div>
+</div>
+<div class="section" id="download-the-data-and-notebook">
+<h2>Download the data and notebook<a class="headerlink" href="#download-the-data-and-notebook" title="Permalink to this headline">¶</a></h2>
+<p>A new tab will open up with the JupyterLab landing page. Create a new Terminal in JupyterLab.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/terminal.png"><img alt="_images/terminal.png" src="_images/terminal.png" style="width: 768.0px; height: 374.0px;" /></a>
+</div>
+<div class="section" id="upload-automobile-pipeline-notebook-file">
+<h3>Upload Automobile pipeline notebook file<a class="headerlink" href="#upload-automobile-pipeline-notebook-file" title="Permalink to this headline">¶</a></h3>
+<p>In the Terminal window, run these commands and download the notebook and the data that you will use for the remainder of the lab.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>git clone <a class="reference external" href="https://github.com/katonic-dev/Examples.git">https://github.com/katonic-dev/Examples.git</a></p>
+</div>
+<p>This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb">automobile-preprocessing.ipynb</a> inside <strong>Examples/automobile/</strong>.</p>
+</div>
+</div>
+<div class="section" id="explore-the-ml-code-of-the-automobile-usecase">
+<h2>Explore the ML code of the Automobile usecase<a class="headerlink" href="#explore-the-ml-code-of-the-automobile-usecase" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="convert-your-notebook-to-a-katonic-pipeline">
+<h2>Convert your notebook to a Katonic Pipeline<a class="headerlink" href="#convert-your-notebook-to-a-katonic-pipeline" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="katonic-pipeline-dashboard">
+<h2>Katonic Pipeline Dashboard<a class="headerlink" href="#katonic-pipeline-dashboard" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pipeline-components-execution">
+<h2>Pipeline components execution<a class="headerlink" href="#pipeline-components-execution" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
