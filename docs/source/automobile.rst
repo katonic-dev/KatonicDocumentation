@@ -37,7 +37,7 @@ Create a Notebook
 ------------------
 
 Navigate to the **Notebook** link on the Katonic central dashboard.
-
+            
 .. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/notebook.png
    :scale: 40%
    :align: center
