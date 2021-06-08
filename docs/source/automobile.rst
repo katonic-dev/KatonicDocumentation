@@ -24,7 +24,7 @@ Automobile workflow
 
 **What we're going to build**
 
-.. figure:: /images/overview_graph.png
+.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/overview_graph.png.png
    :scale: 80%
    :align: center
 
