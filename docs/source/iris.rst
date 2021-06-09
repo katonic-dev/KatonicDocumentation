@@ -1,37 +1,36 @@
-.. _automobile:
+.. _iris:
 
-Automobile 
+Iris
 ============
 
-1. Automobile workflow
+1. Iris workflow
 
    * Dataset
 2. Create a Notebook
 3. Download the data and notebook
 
-   * Upload Automobile pipeline notebook file
-4. Explore the ML code of the Automobile usecase
+   * Upload Iris pipeline notebook file
+4. Explore the ML code of the Iris usecase
 5. Convert your notebook to a Katonic Pipeline
 6. Katonic Pipeline Dashboard
 7. Pipeline components execution
 
-Automobile workflow
+Iris workflow
 -------------------
-* Load the automobile dataset.
+* Load the Iris dataset.
 * Transforms raw data into meaningful information by doing data preprocessing.
-* Perform feature engineering to create features.
 * Storing created features in the feature store.
 
 **What we're going to build**
 
-.. figure:: /images/automobile/overview_graph.png
+.. figure:: /images/iris/overview_graph.png
    :scale: 80%
    :align: center
 
 Dataset
 +++++++
 
-The dataset involved here is publicly available at `Automobile Dataset <https://www.kaggle.com/toramky/automobile-dataset>`_ that predict the price of the automobiles given all the information in the dataset. 
+The dataset involved here is publicly available at `Iris Dataset <https://www.kaggle.com/uciml/iris>`_  that predict the species of the iris flower, given all the information in the dataset.
 
 Create a Notebook
 ------------------
@@ -87,7 +86,7 @@ A new tab will open up with the JupyterLab landing page. Create a new Terminal i
    :scale: 40%
    :align: center
 
-Upload Automobile pipeline notebook file
+Upload Iris pipeline notebook file
 ++++++++++++++++++++++++++++++++++++++++++++
 In the Terminal window, run these commands and download the notebook and the data that you will use for the remainder of the lab.
 
@@ -95,22 +94,22 @@ In the Terminal window, run these commands and download the notebook and the dat
    
    git clone https://github.com/katonic-dev/Examples.git
    
-This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `automobile-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb>`_ inside **Examples/automobile/**.
+This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `iris-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/iris/iris-preprocessing.ipynb>`_ inside **Examples/iris/**.
 
 Here we divide the notebook into three steps:
 
-* First step: `automobile-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-preprocessing.ipynb>`_
+* First step: `iris-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/iris/iris-preprocessing.ipynb>`_
 
-* Second step: `automobile-model-building.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-model-building.ipynb>`_
+* Second step: `iris-model-building.ipynb <https://github.com/katonic-dev/Examples/blob/master/iris/iris-model-building.ipynb>`_
 
-* Third step: `automobile-Deploy.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb>`_
+* Third step: `iris-deploy.ipynb <https://github.com/katonic-dev/Examples/blob/master/iris/iris-deploy.ipynb>`_
 
-Explore the ML code of the Automobile usecase
+Explore the ML code of the Iris usecase
 -----------------------------------------------
 
 Run the notebook step-by-step. Note that the code fails because a library is missing.
 
-.. figure:: /images/automobile/missing_lib.png
+.. figure:: /images/iris/missing_lib.png
    :scale: 40%
    :align: center
 
@@ -118,13 +117,13 @@ You can install the required libraries either by go to the Terminal and install 
 
 Run the cell right above to install the missing libraries:
 
-.. figure:: /images/automobile/pip_install.png
+.. figure:: /images/iris/pip_install.png
    :scale: 40%
    :align: center
 
 Restart the notebook kernel by clicking on the Refresh icon.
 
-.. figure:: /images/automobile/restart.png
+.. figure:: /images/iris/restart.png
    :scale: 40%
    :align: center
 
@@ -143,13 +142,13 @@ Enable Kale by clicking on the Kale slider in the Kale Deployment Panel (left pa
 
 * Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.
 
-.. figure:: /images/automobile/kale.png
+.. figure:: /images/iris/kale.png
    :scale: 40%
    :align: center
 
 Explore per-cell dependencies. 
 
-.. figure:: /images/automobile/kale_deploy.png
+.. figure:: /images/iris/kale_deploy.png
    :scale: 40%
    :align: center
 
@@ -191,7 +190,7 @@ Click the **Volume access mode** and select the mode.
 
 Click the **Compile and Run** button.
 
-.. figure:: /images/automobile/comp_run.png
+.. figure:: /images/iris/comp_run.png
    :scale: 50%
    :align: center
 
@@ -216,47 +215,42 @@ Click the link to go to the Katonic Pipelines UI and view the run.
 Katonic Pipeline Dashboard
 ----------------------------
 
-After clicking view, select the automobile experiment
+After clicking view, select the iris experiment
 
-.. figure:: /images/automobile/act_exp.png
+.. figure:: /images/iris/act_exp.png
    :scale: 40%
    :align: center
 
 Dropdown the experiment and select the latest pipeline which is created
 
-.. figure:: /images/automobile/rec_pipe.png
+.. figure:: /images/iris/rec_pipe.png
    :scale: 40%
    :align: center
 
 Wait for it to complete.
 
-.. figure:: /images/automobile/pipe_start.png
+.. figure:: /images/iris/pipe_start.png
    :scale: 40%
    :align: center
 
-.. figure:: /images/automobile/pipe_comp.png
+.. figure:: /images/iris/pipe_comp.png
    :scale: 40%
    :align: center
 
 Pipeline components execution
 -------------------------------
 
-Visualization of Automobile Load data Components
+Visualization of Iris Load data Components
 
-.. figure:: /images/automobile/load_vis.png
+.. figure:: /images/iris/load_vis.png
    :scale: 40%
    :align: center
 
-Visualization of Automobile Data preprocessing Components
+Visualization of Iris Data preprocessing Components
 
-.. figure:: /images/automobile/prepro_vis.png
+.. figure:: /images/iris/prepro_vis.png
    :scale: 40%
    :align: center
 
-Visualization of Automobile Feature engineering Components
-
-.. figure:: /images/automobile/feat_vis.png
-   :scale: 40%
-   :align: center
 
 Congratulations! You just ran an end-to-end Katonic Pipeline starting from your notebook!

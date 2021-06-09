@@ -9,13 +9,15 @@ Welcome to Katonic's documentation!
 
 
 
-.. toctree::
-   :maxdepth: 4
-   :caption: Contents:
 
-   examples
+.. toctree::
+   :maxdepth: 6
+   :caption: List of Examples:
 
    automobile
-
+   iris
+   customerchurn
+   e_commerce
+   creditcard
 
    
