@@ -7,7 +7,7 @@ Automobile
 
    * Dataset
 2. Create a Notebook
-3. Download the data and notebook
+3. Download the data an d notebook
 
    * Upload Automobile pipeline notebook file
 4. Explore the ML code of the Automobile usecase
