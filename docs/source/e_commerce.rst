@@ -17,64 +17,69 @@ E-commerce
 
 E-commerce workflow
 -------------------
-* Load the e-commerce dataset.
+* Load the e_commerce dataset.
+* Performing some Data profiling on the dataset.
+* After that, explore and visualize the data by doing some exploratory data analysis.
 * Transforms raw data into meaningful information by doing data preprocessing.
 * Perform feature engineering to create features.
-* Storing created features in the feature store.
+* Splitting the data into training and testing sets.
+* X and Y axis labels for graphs or figures.
+* Training the different models
+* Evaluating the different modes and choosing the best model among them.
 
 **What we're going to build**
 
-.. figure:: /images/overview_graph.png
+.. figure:: /images/e_commerce/overview_graph.png
    :scale: 80%
    :align: center
 
 Dataset
 +++++++
 
-The dataset involved here is publicly available at E-commerce Dataset <https://www.kaggle.com/toramky/automobile-dataset>`_ that predict the price of the e-commerce given all the information in the dataset. 
+The dataset involved here is publicly available at `E-commerce Dataset <https://www.kaggle.com/prachi13/customer-analytics>`_ that predict the price whether the product reached on time or not, given all the information in the dataset. 
 
 Create a Notebook
 ------------------
 
 Navigate to the **Notebook** link on the Katonic central dashboard.
 
-.. figure:: /images/notebook.png
+.. figure:: /images/common_images/notebook.png
    :scale: 40%
    :align: center
 
 Click on **Create Notebook**
 
-.. figure:: /images/create.png
+.. figure:: /images/common_images/create.png
    :scale: 40%
    :align: center
 
 Specify a name for your Notebook
 
-.. figure:: /images/notebook_name.png
+.. figure:: /images/common_images/notebook_name.png
    :scale: 40%
    :align: center
 
 Make sure you have selected one of the image:
 
-.. figure:: /images/choose_image.png
+.. figure:: /images/common_images/choose_image.png
    :scale: 80%
    :align: center
 
 Select the **CPU** and **Memory** require:
 
-.. figure:: /images/cpu_mo.png
+.. figure:: /images/common_images/cpu_mo.png
    :scale: 80%
    :align: center
 
 Click **Create** to create the notebook.
 
-.. figure:: /images/create2.png
+.. figure:: /images/common_images/create2.png
    :scale: 80%
    :align: center
 
 When the notebook server is available, click Connect to connect to it.
 
-.. figure:: /images/connect.png
+.. figure:: /images/common_images/connect.png
    :scale: 70%
    :align: center
 
@@ -83,7 +88,7 @@ Download the data and notebook
 
 A new tab will open up with the JupyterLab landing page. Create a new Terminal in JupyterLab.
 
-.. figure:: /images/terminal.png
+.. figure:: /images/common_images/terminal.png
    :scale: 40%
    :align: center
 
@@ -95,22 +100,14 @@ In the Terminal window, run these commands and download the notebook and the dat
    
    git clone https://github.com/katonic-dev/Examples.git
    
-This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `automobile-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb>`_ inside **Examples/e-commerce/**.
-
-Here we divide the notebook into three steps:
-
-* First step: `automobile-preprocessing.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-preprocessing.ipynb>`_
-
-* Second step: `automobile-model-building.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-model-building.ipynb>`_
-
-* Third step: `automobile-Deploy.ipynb <https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb>`_
+This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `e_commerce.ipynb <https://github.com/katonic-dev/Examples/blob/master/e_commerce/e_commerce.ipynb>`_ inside **Examples/e-commerce/**.
 
 Explore the ML code of the E-commerce usecase
 -----------------------------------------------
 
 Run the notebook step-by-step. Note that the code fails because a library is missing.
 
-.. figure:: /images/missing_lib.png
+.. figure:: /images/e_commerce/missing_lib.png
    :scale: 40%
    :align: center
 
@@ -118,13 +115,13 @@ You can install the required libraries either by go to the Terminal and install 
 
 Run the cell right above to install the missing libraries:
 
-.. figure:: /images/pip_install.png
+.. figure:: /images/e_commerce/pip_install.png
    :scale: 40%
    :align: center
 
 Restart the notebook kernel by clicking on the Refresh icon.
 
-.. figure:: /images/restart.png
+.. figure:: /images/e_commerce/restart.png
    :scale: 40%
    :align: center
 
@@ -143,19 +140,19 @@ Enable Kale by clicking on the Kale slider in the Kale Deployment Panel (left pa
 
 * Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.
 
-.. figure:: /images/kale.png
+.. figure:: /images/e_commerce/kale.png
    :scale: 40%
    :align: center
 
 Explore per-cell dependencies. 
 
-.. figure:: /images/kale_deploy.png
+.. figure:: /images/e_commerce/kale_deploy.png
    :scale: 40%
    :align: center
 
 See how multiple notebook cells can be part of a single pipeline step, as indicated by color bars on the left of the cells, and how a pipeline step may depend on previous ones, as indicated by depends on labels above the cells. For example, the image below shows multiple cells that are part of the same pipeline step. They have the same brown color and they depend on a previous pipeline step named "load_data".
 
-.. figure:: /images/tag.png
+.. figure:: /images/common_images/tag.png
    :scale: 40%
    :align: center
 
@@ -173,7 +170,7 @@ Click **Advanced Settings** and add Docker image
 
 * Images are defined using a docker file, a docker file is just a text file with a list of steps to perform to create that image. So, you write a docker file then you build that and you get an image which you can run to get containers.
 
-.. figure:: https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/adv_set.png
+.. figure:: /images/common_images/adv_set.png
    :scale: 50%
    :align: center
 
@@ -185,31 +182,31 @@ Click the **Volume access mode** and select the mode.
 
 * ReadWriteMany - Read write by many node
 
-.. figure:: /images/mode.png
+.. figure:: /images/common_images/mode.png
    :scale: 50%
    :align: center
 
 Click the **Compile and Run** button.
 
-.. figure:: /images/comp_run.png
+.. figure:: /images/e_commerce/comp_run.png
    :scale: 50%
    :align: center
 
 Watch the progress of Compiling Notebook.
 
-.. figure:: /images/comp.png
+.. figure:: /images/common_images/comp.png
    :scale: 50%
    :align: center
 
 Watch the progress of Running pipeline
 
-.. figure:: /images/run.png
+.. figure:: /images/common_images/run.png
    :scale: 50%
    :align: center
 
 Click the link to go to the Katonic Pipelines UI and view the run.
 
-.. figure:: /images/view.png
+.. figure:: /images/common_images/view.png
    :scale: 50%
    :align: center
 
@@ -218,24 +215,24 @@ Katonic Pipeline Dashboard
 
 After clicking view, select the e-commerce experiment
 
-.. figure:: /images/act_exp.png
+.. figure:: /images/e_commerce/act_exp.png
    :scale: 40%
    :align: center
 
 Dropdown the experiment and select the latest pipeline which is created
 
-.. figure:: /images/rec_pipe.png
+.. figure:: /images/e_commerce/rec_pipe.png
    :scale: 40%
    :align: center
 
 Wait for it to complete.
 
-.. figure:: /images/pipe_start.png
+.. figure:: /images/e_commerce/pipe_start.png
    :scale: 40%
    :align: center
 
-.. figure:: /images/pipe_comp.png
-   :scale: 40%
+.. figure:: /images/e_commerce/pipe_comp.png
+   :scale: 80%
    :align: center
 
 Pipeline components execution
@@ -243,20 +240,40 @@ Pipeline components execution
 
 Visualization of E-commerce Load data Components
 
-.. figure:: /images/load_vis.png
+.. figure:: /images/e_commerce/load_vis.png
+   :scale: 40%
+   :align: center
+
+Visualization of E_commerce Data profiling Components
+
+.. figure:: /images/e_commerce/data_prof_vis.png
+   :scale: 40%
+   :align: center
+
+Visualization of e_commerce exploratory data analysis Components
+
+.. figure:: /images/e_commerce/eda_vis.png
    :scale: 40%
    :align: center
 
 Visualization of E-commerce Data preprocessing Components
 
-.. figure:: /images/prepro_vis.png
+.. figure:: /images/e_commerce/prepro_vis.png
    :scale: 40%
    :align: center
 
 Visualization of E-commerce Feature engineering Components
 
-.. figure:: /images/feat_vis.png
+.. figure:: /images/e_commerce/feat_vis.png
    :scale: 40%
    :align: center
+
+Visualization of e_commerce Train test split Components
+
+.. figure:: /images/e_commerce/train_test_vis.png
+   :scale: 40%
+   :align: center
+
+Similarly you can see the visualizations and logs for other containers as well.
 
 Congratulations! You just ran an end-to-end Katonic Pipeline starting from your notebook!

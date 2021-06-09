@@ -198,56 +198,61 @@
 <div class="section" id="e-commerce-workflow">
 <h2>E-commerce workflow<a class="headerlink" href="#e-commerce-workflow" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Load the e-commerce dataset.</p></li>
+<li><p>Load the e_commerce dataset.</p></li>
+<li><p>Performing some Data profiling on the dataset.</p></li>
+<li><p>After that, explore and visualize the data by doing some exploratory data analysis.</p></li>
 <li><p>Transforms raw data into meaningful information by doing data preprocessing.</p></li>
 <li><p>Perform feature engineering to create features.</p></li>
-<li><p>Storing created features in the feature store.</p></li>
+<li><p>Splitting the data into training and testing sets.</p></li>
+<li><p>X and Y axis labels for graphs or figures.</p></li>
+<li><p>Training the different models</p></li>
+<li><p>Evaluating the different modes and choosing the best model among them.</p></li>
 </ul>
 <p><strong>What we’re going to build</strong></p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/overview_graph.png"><img alt="images/overview_graph.png" src="images/overview_graph.png" /></a>
+<a class="reference internal image-reference" href="_images/overview_graph3.png"><img alt="_images/overview_graph3.png" src="_images/overview_graph3.png" style="width: 712.8000000000001px; height: 476.8px;" /></a>
 </div>
 <div class="section" id="dataset">
 <h3>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h3>
-<p>The dataset involved here is publicly available at E-commerce Dataset &lt;<a class="reference external" href="https://www.kaggle.com/toramky/automobile-dataset">https://www.kaggle.com/toramky/automobile-dataset</a>&gt;`_ that predict the price of the e-commerce given all the information in the dataset.</p>
+<p>The dataset involved here is publicly available at <a class="reference external" href="https://www.kaggle.com/prachi13/customer-analytics">E-commerce Dataset</a> that predict the price whether the product reached on time or not, given all the information in the dataset.</p>
 </div>
 </div>
 <div class="section" id="create-a-notebook">
 <h2>Create a Notebook<a class="headerlink" href="#create-a-notebook" title="Permalink to this headline">¶</a></h2>
 <p>Navigate to the <strong>Notebook</strong> link on the Katonic central dashboard.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/notebook.png"><img alt="images/notebook.png" src="images/notebook.png" /></a>
+<a class="reference internal image-reference" href="_images/notebook.png"><img alt="_images/notebook.png" src="_images/notebook.png" style="width: 765.6px; height: 368.40000000000003px;" /></a>
 </div>
 <p>Click on <strong>Create Notebook</strong></p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/create.png"><img alt="images/create.png" src="images/create.png" /></a>
+<a class="reference internal image-reference" href="_images/create.png"><img alt="_images/create.png" src="_images/create.png" style="width: 764.8000000000001px; height: 132.4px;" /></a>
 </div>
 <p>Specify a name for your Notebook</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/notebook_name.png"><img alt="images/notebook_name.png" src="images/notebook_name.png" /></a>
+<a class="reference internal image-reference" href="_images/notebook_name.png"><img alt="_images/notebook_name.png" src="_images/notebook_name.png" style="width: 768.0px; height: 135.6px;" /></a>
 </div>
 <p>Make sure you have selected one of the image:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/choose_image.png"><img alt="images/choose_image.png" src="images/choose_image.png" /></a>
+<a class="reference internal image-reference" href="_images/choose_image.png"><img alt="_images/choose_image.png" src="_images/choose_image.png" style="width: 767.2px; height: 442.40000000000003px;" /></a>
 </div>
 <p>Select the <strong>CPU</strong> and <strong>Memory</strong> require:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/cpu_mo.png"><img alt="images/cpu_mo.png" src="images/cpu_mo.png" /></a>
+<a class="reference internal image-reference" href="_images/cpu_mo.png"><img alt="_images/cpu_mo.png" src="_images/cpu_mo.png" style="width: 757.6px; height: 429.6px;" /></a>
 </div>
 <p>Click <strong>Create</strong> to create the notebook.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/create2.png"><img alt="images/create2.png" src="images/create2.png" /></a>
+<a class="reference internal image-reference" href="_images/create2.png"><img alt="_images/create2.png" src="_images/create2.png" style="width: 752.8000000000001px; height: 326.40000000000003px;" /></a>
 </div>
 <p>When the notebook server is available, click Connect to connect to it.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/connect.png"><img alt="images/connect.png" src="images/connect.png" /></a>
+<a class="reference internal image-reference" href="_images/connect.png"><img alt="_images/connect.png" src="_images/connect.png" style="width: 961.8px; height: 85.39999999999999px;" /></a>
 </div>
 </div>
 <div class="section" id="download-the-data-and-notebook">
 <h2>Download the data and notebook<a class="headerlink" href="#download-the-data-and-notebook" title="Permalink to this headline">¶</a></h2>
 <p>A new tab will open up with the JupyterLab landing page. Create a new Terminal in JupyterLab.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/terminal.png"><img alt="images/terminal.png" src="images/terminal.png" /></a>
+<a class="reference internal image-reference" href="_images/terminal.png"><img alt="_images/terminal.png" src="_images/terminal.png" style="width: 768.0px; height: 374.0px;" /></a>
 </div>
 <div class="section" id="upload-e-commerce-pipeline-notebook-file">
 <h3>Upload E-commerce pipeline notebook file<a class="headerlink" href="#upload-e-commerce-pipeline-notebook-file" title="Permalink to this headline">¶</a></h3>
@@ -256,29 +261,23 @@
 <p class="admonition-title">Note</p>
 <p>git clone <a class="reference external" href="https://github.com/katonic-dev/Examples.git">https://github.com/katonic-dev/Examples.git</a></p>
 </div>
-<p>This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb">automobile-preprocessing.ipynb</a> inside <strong>Examples/e-commerce/</strong>.</p>
-<p>Here we divide the notebook into three steps:</p>
-<ul class="simple">
-<li><p>First step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-preprocessing.ipynb">automobile-preprocessing.ipynb</a></p></li>
-<li><p>Second step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-model-building.ipynb">automobile-model-building.ipynb</a></p></li>
-<li><p>Third step: <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/automobile/automobile-Deploy.ipynb">automobile-Deploy.ipynb</a></p></li>
-</ul>
+<p>This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook <a class="reference external" href="https://github.com/katonic-dev/Examples/blob/master/e_commerce/e_commerce.ipynb">e_commerce.ipynb</a> inside <strong>Examples/e-commerce/</strong>.</p>
 </div>
 </div>
 <div class="section" id="explore-the-ml-code-of-the-e-commerce-usecase">
 <h2>Explore the ML code of the E-commerce usecase<a class="headerlink" href="#explore-the-ml-code-of-the-e-commerce-usecase" title="Permalink to this headline">¶</a></h2>
 <p>Run the notebook step-by-step. Note that the code fails because a library is missing.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/missing_lib.png"><img alt="images/missing_lib.png" src="images/missing_lib.png" /></a>
+<a class="reference internal image-reference" href="_images/missing_lib3.png"><img alt="_images/missing_lib3.png" src="_images/missing_lib3.png" style="width: 767.6px; height: 374.8px;" /></a>
 </div>
 <p>You can install the required libraries either by go to the Terminal and install the missing library or directly in the cell in the notebook.</p>
 <p>Run the cell right above to install the missing libraries:</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/pip_install.png"><img alt="images/pip_install.png" src="images/pip_install.png" /></a>
+<a class="reference internal image-reference" href="_images/pip_install3.png"><img alt="_images/pip_install3.png" src="_images/pip_install3.png" style="width: 768.0px; height: 432.0px;" /></a>
 </div>
 <p>Restart the notebook kernel by clicking on the Refresh icon.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/restart.png"><img alt="images/restart.png" src="images/restart.png" /></a>
+<a class="reference internal image-reference" href="_images/restart3.png"><img alt="_images/restart3.png" src="_images/restart3.png" style="width: 768.0px; height: 372.0px;" /></a>
 </div>
 </div>
 <div class="section" id="convert-your-notebook-to-a-katonic-pipeline">
@@ -292,15 +291,15 @@
 <li><p>Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.</p></li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/kale.png"><img alt="images/kale.png" src="images/kale.png" /></a>
+<a class="reference internal image-reference" href="_images/kale3.png"><img alt="_images/kale3.png" src="_images/kale3.png" style="width: 768.0px; height: 374.40000000000003px;" /></a>
 </div>
 <p>Explore per-cell dependencies.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/kale_deploy.png"><img alt="images/kale_deploy.png" src="images/kale_deploy.png" /></a>
+<a class="reference internal image-reference" href="_images/kale_deploy3.png"><img alt="_images/kale_deploy3.png" src="_images/kale_deploy3.png" style="width: 768.0px; height: 373.6px;" /></a>
 </div>
 <p>See how multiple notebook cells can be part of a single pipeline step, as indicated by color bars on the left of the cells, and how a pipeline step may depend on previous ones, as indicated by depends on labels above the cells. For example, the image below shows multiple cells that are part of the same pipeline step. They have the same brown color and they depend on a previous pipeline step named “load_data”.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/tag.png"><img alt="images/tag.png" src="images/tag.png" /></a>
+<a class="reference internal image-reference" href="_images/tag.png"><img alt="_images/tag.png" src="_images/tag.png" style="width: 768.0px; height: 290.40000000000003px;" /></a>
 </div>
 <p>Normally, you should create a new Docker image to be able run this notebook as a Katonic pipeline, to include the newly installed libraries.</p>
 <p>Click <strong>Advanced Settings</strong> and add Docker image</p>
@@ -312,7 +311,7 @@
 <li><p>Images are defined using a docker file, a docker file is just a text file with a list of steps to perform to create that image. So, you write a docker file then you build that and you get an image which you can run to get containers.</p></li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/adv_set.png"><img alt="https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/adv_set.png" src="https://github.com/katonic-dev/KatonicDocumentation/blob/master/docs/source/images/adv_set.png" /></a>
+<a class="reference internal image-reference" href="_images/adv_set.png"><img alt="_images/adv_set.png" src="_images/adv_set.png" style="width: 211.0px; height: 470.5px;" /></a>
 </div>
 <p>Click the <strong>Volume access mode</strong> and select the mode.</p>
 <ul class="simple">
@@ -321,57 +320,70 @@
 <li><p>ReadWriteMany - Read write by many node</p></li>
 </ul>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/mode.png"><img alt="images/mode.png" src="images/mode.png" /></a>
+<a class="reference internal image-reference" href="_images/mode.png"><img alt="_images/mode.png" src="_images/mode.png" style="width: 209.5px; height: 306.5px;" /></a>
 </div>
 <p>Click the <strong>Compile and Run</strong> button.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/comp_run.png"><img alt="images/comp_run.png" src="images/comp_run.png" /></a>
+<a class="reference internal image-reference" href="_images/comp_run3.png"><img alt="_images/comp_run3.png" src="_images/comp_run3.png" style="width: 211.0px; height: 467.0px;" /></a>
 </div>
 <p>Watch the progress of Compiling Notebook.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/comp.png"><img alt="images/comp.png" src="images/comp.png" /></a>
+<a class="reference internal image-reference" href="_images/comp.png"><img alt="_images/comp.png" src="_images/comp.png" style="width: 231.5px; height: 122.5px;" /></a>
 </div>
 <p>Watch the progress of Running pipeline</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/run.png"><img alt="images/run.png" src="images/run.png" /></a>
+<a class="reference internal image-reference" href="_images/run.png"><img alt="_images/run.png" src="_images/run.png" style="width: 229.0px; height: 161.0px;" /></a>
 </div>
 <p>Click the link to go to the Katonic Pipelines UI and view the run.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/view.png"><img alt="images/view.png" src="images/view.png" /></a>
+<a class="reference internal image-reference" href="_images/view.png"><img alt="_images/view.png" src="_images/view.png" style="width: 228.5px; height: 163.0px;" /></a>
 </div>
 </div>
 <div class="section" id="katonic-pipeline-dashboard">
 <h2>Katonic Pipeline Dashboard<a class="headerlink" href="#katonic-pipeline-dashboard" title="Permalink to this headline">¶</a></h2>
 <p>After clicking view, select the e-commerce experiment</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/act_exp.png"><img alt="images/act_exp.png" src="images/act_exp.png" /></a>
+<a class="reference internal image-reference" href="_images/act_exp3.png"><img alt="_images/act_exp3.png" src="_images/act_exp3.png" style="width: 768.0px; height: 368.0px;" /></a>
 </div>
 <p>Dropdown the experiment and select the latest pipeline which is created</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/rec_pipe.png"><img alt="images/rec_pipe.png" src="images/rec_pipe.png" /></a>
+<a class="reference internal image-reference" href="_images/rec_pipe3.png"><img alt="_images/rec_pipe3.png" src="_images/rec_pipe3.png" style="width: 768.0px; height: 370.40000000000003px;" /></a>
 </div>
 <p>Wait for it to complete.</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/pipe_start.png"><img alt="images/pipe_start.png" src="images/pipe_start.png" /></a>
+<a class="reference internal image-reference" href="_images/pipe_start3.png"><img alt="_images/pipe_start3.png" src="_images/pipe_start3.png" style="width: 765.6px; height: 367.20000000000005px;" /></a>
 </div>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/pipe_comp.png"><img alt="images/pipe_comp.png" src="images/pipe_comp.png" /></a>
+<a class="reference internal image-reference" href="_images/pipe_comp3.png"><img alt="_images/pipe_comp3.png" src="_images/pipe_comp3.png" style="width: 712.8000000000001px; height: 468.0px;" /></a>
 </div>
 </div>
 <div class="section" id="pipeline-components-execution">
 <h2>Pipeline components execution<a class="headerlink" href="#pipeline-components-execution" title="Permalink to this headline">¶</a></h2>
 <p>Visualization of E-commerce Load data Components</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/load_vis.png"><img alt="images/load_vis.png" src="images/load_vis.png" /></a>
+<a class="reference internal image-reference" href="_images/load_vis2.png"><img alt="_images/load_vis2.png" src="_images/load_vis2.png" style="width: 634.0px; height: 323.6px;" /></a>
+</div>
+<p>Visualization of E_commerce Data profiling Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/data_prof_vis.png"><img alt="_images/data_prof_vis.png" src="_images/data_prof_vis.png" style="width: 657.6px; height: 320.8px;" /></a>
+</div>
+<p>Visualization of e_commerce exploratory data analysis Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/eda_vis.png"><img alt="_images/eda_vis.png" src="_images/eda_vis.png" style="width: 666.8000000000001px; height: 327.6px;" /></a>
 </div>
 <p>Visualization of E-commerce Data preprocessing Components</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/prepro_vis.png"><img alt="images/prepro_vis.png" src="images/prepro_vis.png" /></a>
+<a class="reference internal image-reference" href="_images/prepro_vis3.png"><img alt="_images/prepro_vis3.png" src="_images/prepro_vis3.png" style="width: 757.2px; height: 335.20000000000005px;" /></a>
 </div>
 <p>Visualization of E-commerce Feature engineering Components</p>
 <div class="figure align-center">
-<a class="reference internal image-reference" href="images/feat_vis.png"><img alt="images/feat_vis.png" src="images/feat_vis.png" /></a>
+<a class="reference internal image-reference" href="_images/feat_vis1.png"><img alt="_images/feat_vis1.png" src="_images/feat_vis1.png" style="width: 746.4000000000001px; height: 321.20000000000005px;" /></a>
 </div>
+<p>Visualization of e_commerce Train test split Components</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/train_test_vis.png"><img alt="_images/train_test_vis.png" src="_images/train_test_vis.png" style="width: 748.4000000000001px; height: 320.40000000000003px;" /></a>
+</div>
+<p>Similarly you can see the visualizations and logs for other containers as well.</p>
 <p>Congratulations! You just ran an end-to-end Katonic Pipeline starting from your notebook!</p>
 </div>
 </div>
