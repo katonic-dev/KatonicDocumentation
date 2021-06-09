@@ -30,7 +30,7 @@ CreditCard workflow
 
 **What we're going to build**
 
-.. figure:: /images/creditcard/overview_graph.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/overview_graph.png
    :scale: 80%
    :align: center
 
@@ -44,43 +44,43 @@ Create a Notebook
 
 Navigate to the **Notebook** link on the Katonic central dashboard.
 
-.. figure:: /images/common_images/notebook.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/notebook.png
    :scale: 40%
    :align: center
 
 Click on **Create Notebook**
 
-.. figure:: /images/common_images/create.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/create.png
    :scale: 40%
    :align: center
 
 Specify a name for your Notebook
 
-.. figure:: /images/common_images/notebook_name.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/notebook_name.png
    :scale: 40%
    :align: center
 
 Make sure you have selected one of the image:
 
-.. figure:: /images/common_images/choose_image.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/choose_image.png
    :scale: 80%
    :align: center
 
 Select the **CPU** and **Memory** require:
 
-.. figure:: /images/common_images/cpu_mo.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/cpu_mo.png
    :scale: 80%
    :align: center
 
 Click **Create** to create the notebook.
 
-.. figure:: /images/common_images/create2.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/create2.png
    :scale: 80%
    :align: center
 
 When the notebook server is available, click Connect to connect to it.
 
-.. figure:: /images/common_images/connect.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/connect.png
    :scale: 70%
    :align: center
 
@@ -89,7 +89,7 @@ Download the data and notebook
 
 A new tab will open up with the JupyterLab landing page. Create a new Terminal in JupyterLab.
 
-.. figure:: /images/common_images/terminal.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/terminal.png
    :scale: 40%
    :align: center
 
@@ -101,14 +101,14 @@ In the Terminal window, run these commands and download the notebook and the dat
    
    git clone https://github.com/katonic-dev/Examples.git
    
-This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `credit_card.ipynb <https://github.com/katonic-dev/Examples/blob/master/credit_fraud/credit_card.ipynb>`_ inside **Examples/automobile/**.
+This repository contains a series of curated examples with data and annotated Notebooks. Navigate to the folder in the sidebar and open the notebook `credit_card.ipynb <https://github.com/katonic-dev/Examples/blob/master/credit_fraud/credit_card.ipynb>`_ inside **Examples/credit_fraud/**.
 
 Explore the ML code of the CreditCard usecase
 -----------------------------------------------
 
 Run the notebook step-by-step. Note that the code fails because a library is missing.
 
-.. figure:: /images/creditcard/missing_lib.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/missing_lib.png
    :scale: 40%
    :align: center
 
@@ -116,13 +116,13 @@ You can install the required libraries either by go to the Terminal and install 
 
 Run the cell right above to install the missing libraries:
 
-.. figure:: /images/creditcard/pip_install.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/pip_install.png
    :scale: 40%
    :align: center
 
 Restart the notebook kernel by clicking on the Refresh icon.
 
-.. figure:: /images/creditcard/restart.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/restart.png
    :scale: 40%
    :align: center
 
@@ -141,19 +141,19 @@ Enable Kale by clicking on the Kale slider in the Kale Deployment Panel (left pa
 
 * Kale takes as input the annotated Jupyter Notebook and generates a standalone Python script that defines the Katonic pipeline, based on the Notebook and Cells annotations.
 
-.. figure:: /images/creditcard/kale.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/kale.png
    :scale: 40%
    :align: center
 
 Explore per-cell dependencies. 
 
-.. figure:: /images/creditcard/kale_deploy.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/kale_deploy.png
    :scale: 40%
    :align: center
 
 See how multiple notebook cells can be part of a single pipeline step, as indicated by color bars on the left of the cells, and how a pipeline step may depend on previous ones, as indicated by depends on labels above the cells. For example, the image below shows multiple cells that are part of the same pipeline step. They have the same brown color and they depend on a previous pipeline step named "load_data".
 
-.. figure:: /images/common_images/tag.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/tag.png
    :scale: 40%
    :align: center
 
@@ -171,7 +171,7 @@ Click **Advanced Settings** and add Docker image
 
 * Images are defined using a docker file, a docker file is just a text file with a list of steps to perform to create that image. So, you write a docker file then you build that and you get an image which you can run to get containers.
 
-.. figure:: /images/common_images/adv_set.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/adv_set.png
    :scale: 50%
    :align: center
 
@@ -183,31 +183,31 @@ Click the **Volume access mode** and select the mode.
 
 * ReadWriteMany - Read write by many node
 
-.. figure:: /images/common_images/mode.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/mode.png
    :scale: 50%
    :align: center
 
 Click the **Compile and Run** button.
 
-.. figure:: /images/creditcard/comp_run.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/comp_run.png
    :scale: 50%
    :align: center
 
 Watch the progress of Compiling Notebook.
 
-.. figure:: /images/common_images/comp.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/comp.png
    :scale: 50%
    :align: center
 
 Watch the progress of Running pipeline
 
-.. figure:: /images/common_images/run.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/run.png
    :scale: 50%
    :align: center
 
 Click the link to go to the Katonic Pipelines UI and view the run.
 
-.. figure:: /images/common_images/view.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/common_images/view.png
    :scale: 50%
    :align: center
 
@@ -216,23 +216,23 @@ Katonic Pipeline Dashboard
 
 After clicking view, select the creditcard experiment
 
-.. figure:: /images/creditcard/act_exp.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/act_exp.png
    :scale: 40%
    :align: center
 
 Dropdown the experiment and select the latest pipeline which is created
 
-.. figure:: /images/creditcard/rec_pipe.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/rec_pipe.png
    :scale: 40%
    :align: center
 
 Wait for it to complete.
 
-.. figure:: /images/creditcard/pipe_start.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/pipe_start.png
    :scale: 40%
    :align: center
 
-.. figure:: /images/creditcard/pipe_comp.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/pipe_comp.png
    :scale: 90%
    :align: center
 
@@ -241,31 +241,31 @@ Pipeline components execution
 
 Visualization of CreditCard Set up Components
 
-.. figure:: /images/creditcard/setup.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/setup.png
    :scale: 40%
    :align: center
 
 Visualization of CreditCard Load data Components
 
-.. figure:: /images/creditcard/load_data_vis.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/load_data_vis.png
    :scale: 40%
    :align: center
 
 Visualization of CreditCard preprocessing Components
 
-.. figure:: /images/creditcard/prepro_vis.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/prepro_vis.png
    :scale: 40%
    :align: center
 
 Visualization of CreditCard Ada boost model Components
 
-.. figure:: /images/creditcard/ada_model_vis.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/ada_model_vis.png
    :scale: 40%
    :align: center
 
 Visualization of CreditCard Model evaluation Components
 
-.. figure:: /images/creditcard/modeleval_vis.png
+.. figure:: https://raw.githubusercontent.com/katonic-dev/KatonicDocumentation/master/docs/source/images/creditcard/modeleval_vis.png
    :scale: 40%
    :align: center
 
